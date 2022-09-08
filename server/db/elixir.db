@@ -1,0 +1,12 @@
+CREATE TABLE users (
+	username VARCHAR(20),
+    role VARCHAR(20) 
+);
+
+CREATE TABLE servers (
+	product VARCHAR(20),
+    name VARCHAR(20),
+    service BOOLEAN NULL DEFAULT 0,
+    size int,
+    users VARCHAR(20)
+);

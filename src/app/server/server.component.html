@@ -1,0 +1,47 @@
+<h1>Servers</h1>
+<div container="container-fluid">
+  <table class="table" *ngFor="let server of servers | async">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Product</th>
+        <th scope="col">Name</th>
+        <th scope="col">Size</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-gear" style="color: white"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledOh by="dropdownMenuButton">
+              <a class="dropdown-item" [routerLink]="['/permissions']"><i class="fa-solid fa-users fa-xs"></i> Assign</a>
+              <a class="dropdown-item" (click)="onConfigure()"><i class="fa-solid fa-screwdriver-wrench fa-xs"></i> Configure</a>
+              <a class="dropdown-item" (click)="onDelete()"><i class="fa-solid fa-trash fa-xs"></i> Delete</a>
+              <a class="dropdown-item" (click)="onPower()"><i class="fas fa-power-off fa-xs"></i> Power</a>
+            </div>
+          </div>
+        </th>
+        <td> {{ server.product }} </td>
+        <td> {{ server.name }} </td>
+        <td> {{ server.size }} </td>
+        <td> {{ server.service }} </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+  
+
+  
+
+  
+
+

@@ -1,8 +1,18 @@
-<a [routerLink]="['/']">
-  <h1>My Store</h1>
+<a class="title" [routerLink]="['/']">
+  <a class="navbar-logo">
+    <img 
+      [src]="imgSrc"
+      alt="image"
+      class="elixirlogo"
+      />
+  </a>
+  <h1>Elixir Portal</h1>
 </a>
 
-<a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+<!-- <a class="button fancy-button" [routerLink]="['/cart']">
+  <i class="material-icons">shopping_cart</i>
+    Checkout
+</a> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

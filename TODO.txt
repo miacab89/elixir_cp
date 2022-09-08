@@ -1,0 +1,6 @@
+TO DO LIST
+- Iterate servers json on 'Manage/Add Servers'
+- Implement and test Cloud Billing API
+    1. Register domain
+    2. Create organization on Google Cloud Platform
+- Dropdown menu for Servers page

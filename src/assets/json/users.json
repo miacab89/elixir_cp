@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "username": "mia",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  },
+  {
+    "id": 3,
+    "username": "jordon",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  },
+  {
+    "id": 2,
+    "username": "mario",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  },
+  {
+    "id": 3,
+    "username": "juan",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  },
+  {
+    "id": 4,
+    "username": "jacob",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  },
+  {
+    "id": 3,
+    "username": "leslie",
+    "role": null,
+    "password": null,
+    "read": "Read",
+    "readwrite": "Read/Write"
+  }
+  ]

@@ -1,0 +1,46 @@
+<h1>Users</h1>
+<div container="container-fluid">
+  <table class="table" *ngFor="let user of users | async">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Username</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">
+        <td> {{ user.username }} </td>
+        <td> {{ user.role }} </td>
+      </tr>
+    </tbody>
+  </table>
+  <a type="button" class="add-btn" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <i style="color: rgb(74,155,216)" class="fa-solid fa-plus fa-2xl"></i>
+  </a>
+  <div class="collapse" id="collapseExample">
+    <form [formGroup]="newUserForm" (submit)="submitValid()">
+      <h2>Create New User</h2>
+        <input class="form-control" type="text" placeholder="Enter username" aria-label="default input example" name="username" />
+        <input class="form-control" type="password" placeholder="Enter password" aria-label="default input example" name="password" />
+        <input class="form-control" type="password" placeholder="Re-enter password" aria-label="default input example" name="confirmPassword" />
+          <!-- <div  class="alert alert-danger">
+            <div *ngIf="password.errors.required">Password is required.</div>
+          </div> -->
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Select role</option>
+            <option value="read">Read</option>
+            <option value="readwrite">Read/Write</option>
+          </select>
+        <br>
+      <button (click)="newUser()" type="submit" aria-haspopup="true" aria-expanded="false" class="btn btn-secondary">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+

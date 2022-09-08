@@ -1,0 +1,23 @@
+[
+  {
+    "product": "Elixir 1.0 Server",
+    "name": "Loki",
+    "service": "Activated",
+    "size": "302.15 GB", 
+    "users": ""
+  },
+  {
+    "product": "Elixir 1.0 VPN",
+    "name": "Ourboros",
+    "service": "Activated",
+    "size": "403.23 GB",
+    "users": ""
+  }, 
+  {
+    "product": "Alkaline Vault",
+    "name": "Alchemist",
+    "service": "Activated",
+    "size": "11.3 MB",
+    "users": ""
+  }
+]
