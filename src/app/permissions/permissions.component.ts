@@ -12,8 +12,8 @@ import { HttpClient } from '@angular/common/http';
 
 export class PermissionsComponent implements OnInit {
   users = this.serverService.getUsers();
-  SelectedValue: any; 
-  PermissionsList: any; 
+  SelectedValue: string; 
+  PermissionsList: any;
 
   constructor(
     public serverService: UserService,

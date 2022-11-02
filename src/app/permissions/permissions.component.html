@@ -13,12 +13,12 @@
           <tr>
             <th scope="row"></th>
             <td> {{ user.username }} </td>
-            <td id="col"> {{SelectedValue}} </td>
+            <td id="col"> {{ selectedValue }} </td>
             <td> 
               <select class="form-select" aria-label="Default select example" (change)="changeRole($event)" [{ngModel}]="selectedValue">
                 <option [ngValue]="selectedValue">Select a Role</option>
-                <option [value]="user.read">{{user.read}}</option>
-                <option [value]="user.readwrite">{{user.readwrite}}</option>
+                <option [ngValue]="user.read">{{user.read}}</option>
+                <option [ngValue]="user.readwrite">{{user.readwrite}}</option>
               </select>
           </td>
         </tr>
