@@ -21,7 +21,7 @@ export class UserService {
   }
 
   getPerms() {
-    return this.http.get<permsConfig[]>("./assets/json/users.json");
+    return this.http.get<PermsConfig[]>("./assets/json/users.json");
   }
 
   getAll(app: any): Observable<Users[]> {
@@ -50,7 +50,7 @@ export interface userConfig {
   password: string
 }
 
-export interface permsConfig {
+export interface PermsConfig {
   read: string,
   readwrite: string
 }

@@ -23,6 +23,7 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { UserComponent } from './user/user.component';
 import { PermissionsComponent } from './permissions/permissions.component';
 import { AdduserComponent } from './adduser/adduser.component';
+import { PermsConfig } from './user.service';
 
 
 @NgModule({
